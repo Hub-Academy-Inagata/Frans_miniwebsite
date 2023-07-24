@@ -54,6 +54,7 @@ $screen-lg-min: 992px;
 
 // Large tablets and desktops
 $screen-xl-min: 1200px;
+$screen-2xl-min: 1536px;
 
 // Small devices
 @mixin sm {
@@ -83,9 +84,176 @@ $screen-xl-min: 1200px;
     }
 }
 
+@mixin xxl {
+    @media (min-width: #{$screen-2xl-min}) {
+        @content;
+    }
+}
+
 // Custom devices
 @mixin rwd($screen) {
     @media (min-width: $screen) {
         @content;
+    }
+}
+
+// * {
+//     margin: 0 !important;
+//     padding: 0 !important;
+// }
+
+body {
+    background-color: #F5F5F5 !important;
+}
+
+.section1 {
+    padding-bottom: 100px !important;
+    .box1 {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+
+        h1 {
+            font-size: 48px !important;
+            line-height: 0.9 !important;
+        }
+    }
+
+    .box2 {
+        img {
+            border-radius: 30px !important;
+            width: 100% !important;
+            // height: 200px !important;
+        }
+    }
+
+    @include xl {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+
+        .box1 {
+            h1 {
+                font-size: 96px !important;
+                line-height: 0.9 !important;
+            }
+        }
+
+        .box2 {
+            padding-left: 0px !important;
+            padding-top: 150px !important;
+
+            img {
+                width: auto !important;
+                height: 517px !important;
+            }
+        }
+    }
+
+    @include xxl {
+        .box1 {
+            h1 {
+                font-size: 120px !important;
+            }
+        }
+    }
+}
+
+.section2 {
+    .box-large {
+        border-radius: 16px !important;
+
+        @include xl {
+            border-radius: 32px !important;
+        }
+
+        .box1 {
+            h3 {
+                line-height: 1 !important;
+            }
+
+            p {
+                line-height: 1 !important;
+            }
+
+            @include xl {
+                h3 {
+                    font-size: 44px !important;
+                }
+
+                p {
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        .box2 {
+            .box2-container {
+                border-radius: 24px 24px 24px 180px !important;
+
+                @include xl {
+                    border-radius: 24px 24px 24px 200px !important;
+                }
+
+                .img-container {
+                    border-radius: 24px 24px 24px 200px !important;
+                }
+            }
+
+            .thumb-container {
+                img {
+                    width: 32px !important;
+                }
+
+                @include xl {
+                    img {
+                        width: 52px !important;
+                    }
+                }
+            }
+
+            h3 {
+                line-height: 1 !important;
+            }
+
+            p {
+                line-height: 1 !important;
+            }
+
+            @include xl {
+                h3 {
+                    font-size: 40px !important;
+                }
+
+                p {
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        .box3 {
+            h3 {
+                line-height: 1 !important;
+            }
+
+            p {
+                line-height: 1 !important;
+            }
+
+            @include xl {
+                h3 {
+                    font-size: 40px !important;
+                }
+
+                p {
+                    font-size: 22px !important;
+                }
+            }
+        }
+    }
+
+    h1 {
+        line-height: 1 !important;
+        @include xl {
+            font-size: 100px !important;
+        }
     }
 }
