@@ -12024,6 +12024,9 @@ nav img:nth-child(2) {
     height: 42px !important;
   }
 }
+nav .active {
+  text-decoration: underline !important;
+}
 
 .pattern-bg {
   top: 25% !important;
@@ -12149,7 +12152,7 @@ nav img:nth-child(2) {
   margin-top: 120px !important;
 }
 .section2 .box-secondary h1, .section2 .box-secondary .h1 {
-  line-height: 0.8 !important;
+  line-height: 0.85 !important;
   font-size: 56px !important;
 }
 @media (min-width: 1200px) {
@@ -12346,6 +12349,14 @@ footer .footer-box .box2 h1, footer .footer-box .box2 .h1 {
 @media (min-width: 1200px) {
   footer .footer-box .box2 h1, footer .footer-box .box2 .h1 {
     font-size: 96px !important;
+  }
+}
+footer .footer-box .box2 p {
+  line-height: 1 !important;
+}
+@media (min-width: 1200px) {
+  footer .footer-box .box2 p {
+    font-size: 36px !important;
   }
 }
 footer .footer-box .box2 a {

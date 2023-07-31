@@ -138,6 +138,10 @@ nav {
       height: 42px !important;
     }
   }
+
+  .active {
+    text-decoration: underline !important;
+  }
 }
 
 .pattern-bg {
@@ -298,7 +302,7 @@ nav {
   .box-secondary {
     margin-top: 120px !important;
     h1 {
-      line-height: 0.8 !important;
+      line-height: 0.85 !important;
       font-size: 56px !important;
 
       @include xl {
@@ -504,6 +508,13 @@ footer {
         font-size: 58px !important;
         @include xl {
           font-size: 96px !important;
+        }
+      }
+
+      p {
+        line-height: 1 !important;
+        @include xl {
+          font-size: 36px !important;
         }
       }
 
