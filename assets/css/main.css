@@ -12362,11 +12362,6 @@ footer .footer-box .box2 p {
 footer .footer-box .box2 a {
   text-decoration: none !important;
 }
-@media (min-width: 1200px) {
-  footer .footer-box .box2 a {
-    font-size: 28px !important;
-  }
-}
 footer .footer-box .footer-box-bottom p {
   line-height: 1 !important;
 }

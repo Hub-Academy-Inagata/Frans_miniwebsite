@@ -521,9 +521,9 @@ footer {
       a {
         text-decoration: none !important;
 
-        @include xl {
-          font-size: 28px !important;
-        }
+        // @include xl {
+        //   font-size: 28px !important;
+        // }
       }
     }
 
