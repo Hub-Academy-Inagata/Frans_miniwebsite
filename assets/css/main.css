@@ -12236,7 +12236,8 @@ nav .active {
 }
 @media (min-width: 992px) {
   .section3 .grid-box .box2,
-  .section3 .grid-box .box4 {
+  .section3 .grid-box .box4,
+  .section3 .grid-box .box6 {
     padding-top: 100px !important;
   }
 }

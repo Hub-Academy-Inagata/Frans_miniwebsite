@@ -385,7 +385,8 @@ nav {
     }
 
     .box2,
-    .box4 {
+    .box4,
+    .box6 {
       @include lg {
         padding-top: 100px !important;
       }
